@@ -7,9 +7,10 @@
 <head>
 <meta charset="UTF-8">
 <title>My Library</title>
+ <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<h1><em> List of books  your books:</em></h1>
+	<h1 align="center"><em> List of books  your books</em></h1>
 	
 	
 	<%
@@ -22,21 +23,42 @@
 	<form method="post" action="addbook.jsp">
 		<label for="name">Write book title you want to add:</label>
 		<input type="text" id="name" name="name">
-		<button type="submit">Add book</button>
+		<button style = "
+    top:50%;
+    background-color:#0a0a23;
+    color: #fff;
+    border:none;
+    border-radius:10px;
+    box-shadow: 0px 0px 2px 2px rgb(0,0,0);" type="submit">Add book</button>
 	</form>
+
+
+
 	
 	<b>If you want, you could delete your book :)</b>
 	
 	<form method="post" action="deletebook.jsp">
 		<label for="name">Enter the title of the book you want to delete:</label>
 		<input type="text" id="name" name="name">
-		<button type="submit">Delete</button>
+		<button style = "
+    top:50%;
+    background-color:#0a0a23;
+    color: #fff;
+    border:none;
+    border-radius:10px;
+    box-shadow: 0px 0px 2px 2px rgb(0,0,0);" type="submit">Delete</button>
 	</form>
 	<form action="deleteallbooks.jsp">
 	<b>If you want, you could delete all books from your library.</b>
 	<br>
 	
-	<button type="submit">Delete All Books</button>
+	<button style = "
+    top:50%;
+    background-color:#0a0a23;
+    color: #fff;
+    border:none;
+    border-radius:10px;
+    box-shadow: 0px 0px 2px 2px rgb(0,0,0);" type="submit">Delete All Books</button>
 	</form>
 	
 	
